@@ -2,6 +2,7 @@ import pyautogui as pt
 import pyperclip as pc
 from pynput.mouse import Controller, Button
 from time import sleep
+from WhatsApp_Responses import response 
 
 #Mouse click
 mouse = Controller()
@@ -64,12 +65,25 @@ class WhatsApp:
         print("The user said: ", self.message)
         
     #Sends the message to the user
-
+    def send_message(self):
+        try:
+            if(self.message!=self.last_message):
+                bot_response = response(self.message)
+                print("You said: ", bot_response)
+                pt.typewrite(bot_response, interval=.1)
+                # Enter key 
+                pt.typewrite('\n')
+                self.last_message = self.message
+            else:
+                print("No new messages!\n")
+        except:
+            print("Send_message function did not work!!\n")
 wa_bot = WhatsApp(speed = .7, click_speed=.8)
 sleep(2)
-# wa_bot.nav_green_dot()
+wa_bot.nav_green_dot()
 wa_bot.nav_input_box()
 wa_bot.nav_move_to_message()
 wa_bot.get_message()
+wa_bot.send_message()
 
 
