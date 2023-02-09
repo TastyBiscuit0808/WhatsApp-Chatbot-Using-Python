@@ -81,7 +81,7 @@ class WhatsApp:
 wa_bot = WhatsApp(speed = .7, click_speed=.8)
 sleep(2)
 while(1):
-    wa_bot.nav_green_dot()
+    # wa_bot.nav_green_dot()
     wa_bot.nav_input_box()
     wa_bot.nav_move_to_message()
     wa_bot.get_message()
