@@ -33,7 +33,7 @@ Using Microsoft Azure for compute power, we collected various information from t
 
 2. Run all the files excluding FDriver.ipynb
 
-3.  In FDriver :
+3. In FDriver :
 Set FROM, PASS & TO using  https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317
 CAP - max number of items to be sent in the mail.
 set FIRST=1 the first time it’s being used, and change it to zero after that.
