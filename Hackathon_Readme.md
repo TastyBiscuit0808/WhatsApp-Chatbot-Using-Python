@@ -34,18 +34,17 @@ Using Microsoft Azure for compute power, we collected various information from t
 2. Run all the files excluding FDriver.ipynb
 
 3. In FDriver :
-Set FROM, PASS & TO using  https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317
-CAP - max number of items to be sent in the mail.
-set FIRST=1 the first time it’s being used, and change it to zero after that.
+   Set FROM, PASS & TO using  https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317CAP - max number of items to be sent in the mail.
+   set FIRST=1 the first time it’s being used, and change it to zero after that.
 
-line 30 has been commented and replaced with line 31 as the code takes a really long time to execute
-for real scenarios, line 30 should be uncommented and 31 should be commented
+   line 30 has been commented and replaced with line 31 as the code takes a really long time to execute
+   for real scenarios, line 30 should be uncommented and 31 should be commented
 
-ignore all warnings as they are expected and dont affect the final output
-incase NotFoundError is displayed during testing, check the app id's properly in the list
+   ignore all warnings as they are expected and dont affect the final output
+   incase NotFoundError is displayed during testing, check the app id's properly in the list
 
-Individual drivers and files can be tested, write the app id's or code under the last code block in that file 
-(first line will be 'if  _ _name _ _ == 'main': ')
+   Individual drivers and files can be tested, write the app id's or code under the last code block in that file 
+   (first line will be 'if  _ _name _ _ == 'main': ')
 
 
 4. Run FDriver.ipynb
