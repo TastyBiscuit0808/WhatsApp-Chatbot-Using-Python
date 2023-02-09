@@ -12,31 +12,32 @@ Using Microsoft Azure for compute power, we collected various information from t
 ## How To Use
 1. Download  all the Python Libraries
 
-google-play-scraper
-difflib
-re
-urllib
-numpy
-cv2
-skimage.metrics
-structural_similarity
-csv handler
-envelope
-path lib
-path
-csv
-language_tool_python
-pandas
-pickle
-timer
-time
+- google-play-scraper
+- difflib
+- re
+- urllib
+- numpy
+- cv2
+- skimage.metrics
+- structural_similarity
+- csv handler
+- envelope
+- path lib
+- path
+- csv
+- language_tool_python
+- pandas
+- pickle
+- timer
+- time
 
-2. Run all the files excluding Driver 3,FDriver.ipynb
-3. In Driver3 
+2. Run all the files excluding FDriver.ipynb
+3. In FDriver.ipynb
 Set FROM, PASS AND TO USING  https://towardsdatascience.com/automate-sending-emails-with-gmail-in-python-449cc0c3c317
-CAP in Driver3- max number of items to be sent in the mail.
-Run Driver3.ipynb
+CAP max number of items to be sent in the mail.
 In FDriver.ipynb set FIRST=1 the first time it’s being used, and change it to zero after that.
 Run FDriver.ipynb
+
+4. Run FDriver.ipynb
 
 
